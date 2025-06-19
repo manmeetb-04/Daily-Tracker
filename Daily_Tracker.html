@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daily Tracker</title>
+    <style>
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        font-family: "Segoe UI", sans-serif;
+        background-color: #1c1f2b;
+        color: #e0e0e0;
+      }
+      /* css for head for each tr and td */
+      thead tr {
+        background-color: #20242f;
+        color: #55aaff;
+        text-align: center;
+      }
+      thead th {
+        padding: 12px 15px;
+      }
+      /* now body part including each tr and td */
+      tbody tr {
+          border-bottom: 1px groove #2b2f3b;
+        }
+        tbody td{
+            padding: 12px 15px;
+        }
+        tbody tr td:first-child {
+            color: #ff5e7e
+        }
+        tbody tr:hover {
+            background-color: #2e3344;
+            transition: background-color 0.3s ease;
+        }
+        input[type="checkbox"]
+        {
+            appearance: none;
+            display: block;
+            width: 100%;
+            height: 30px;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+           position: relative;
+            margin:0;
+            padding:0;
+        }
+        input[type="checkbox"]::after
+        {
+        content:"\2714";
+        font-size:18px;
+        color: #55aaff;
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%, -50%);
+        visibility: hidden;
+        }
+        input[type="checkbox"]:checked::after
+        {
+            visibility:visible;
+        }
+    </style>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th>Dates</th>
+          <th>Course</th>
+          <th>Typing</th>
+          <th>German language</th>
+          <th>English language</th>
+          <th>Project</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>19</td>
+          <td><input type="checkbox"></td>
+          <td><input type="checkbox"></td>
+          <td><input type="checkbox"></td>
+          <td><input type="checkbox"></td>
+          <td><input type="checkbox"></td>
+          
+        </tr>
+        <tr>
+          <td>20</td>
+          <td><input type="checkbox"></td>
+          <td><input type="checkbox"></td>
+          <td><input type="checkbox"></td>
+          <td><input type="checkbox"></td>
+          <td><input type="checkbox"></td>
+          
+        </tr>
+        <tr>
+          <td>21</td>
+          <td><input type="checkbox"></td>
+          <td><input type="checkbox"></td>
+          <td><input type="checkbox"></td>
+          <td><input type="checkbox"></td>
+          <td><input type="checkbox"></td>
+          
+        </tr>
+        <tr>
+          <td>22</td>
+          <td><input type="checkbox"></td>
+          <td><input type="checkbox"></td>
+          <td><input type="checkbox"></td>
+          <td><input type="checkbox"></td>
+          <td><input type="checkbox"></td>
+          
+        </tr>
+        <tr>
+          <td>23</td>
+          <td><input type="checkbox"></td>
+          <td><input type="checkbox"></td>
+          <td><input type="checkbox"></td>
+          <td><input type="checkbox"></td>
+          <td><input type="checkbox"></td>
+          
+        </tr>
+        <tr>
+          <td>24</td>
+          <td><input type="checkbox"></td>
+          <td><input type="checkbox"></td>
+          <td><input type="checkbox"></td>
+          <td><input type="checkbox"></td>
+          <td><input type="checkbox"></td>
+          
+        </tr>
+        <tr>
+          <td>25</td>
+          <td><input type="checkbox"></td>
+          <td><input type="checkbox"></td>
+          <td><input type="checkbox"></td>
+          <td><input type="checkbox"></td>
+          <td><input type="checkbox"></td>
+          
+        </tr>
+        <tr>
+          <td>26</td>
+          <td><input type="checkbox"></td>
+          <td><input type="checkbox"></td>
+          <td><input type="checkbox"></td>
+          <td><input type="checkbox"></td>
+          <td><input type="checkbox"></td>
+          
+        </tr>
+        <tr>
+          <td>27</td>
+          <td><input type="checkbox"></td>
+          <td><input type="checkbox"></td>
+          <td><input type="checkbox"></td>
+          <td><input type="checkbox"></td>
+          <td><input type="checkbox"></td>
+          
+        </tr>
+        <tr>
+          <td>28</td>
+          <td><input type="checkbox"></td>
+          <td><input type="checkbox"></td>
+          <td><input type="checkbox"></td>
+          <td><input type="checkbox"></td>
+          <td><input type="checkbox"></td>
+          
+        </tr>
+        <tr>
+          <td>29</td>
+          <td><input type="checkbox"></td>
+          <td><input type="checkbox"></td>
+          <td><input type="checkbox"></td>
+          <td><input type="checkbox"></td>
+          <td><input type="checkbox"></td>
+          
+        </tr>
+        <tr>
+          <td>30</td>
+          <td><input type="checkbox"></td>
+          <td><input type="checkbox"></td>
+          <td><input type="checkbox"></td>
+          <td><input type="checkbox"></td>
+          <td><input type="checkbox"></td>
+          
+        </tr>
+        
+     </tbody>
+    </table>
+  </body>
+</html>
