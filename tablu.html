@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Time Table</title>
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-family: "Segoe UI", sans-serif;
+      background-color: #1c1f2b;
+      color: #e0e0e0;
+    }
+
+    thead tr {
+      background-color: #20242f;
+      color: #55aaff;
+      text-align: center;
+    }
+
+    thead th {
+      padding: 12px 15px;
+    }
+
+    tbody tr {
+      border-bottom: 1px groove #2b2f3b;
+    }
+
+    tbody td {
+      padding: 12px 15px;
+      text-align: center;
+    }
+
+    tbody tr td:first-child {
+      color: #ff5e7e;
+    }
+
+    tbody tr:hover {
+      background-color: #2e3344;
+      transition: background-color 0.3s ease;
+    }
+
+    input[type="checkbox"] {
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      background-color: transparent;
+      border: 2px solid #555;
+      cursor: pointer;
+      position: relative;
+      margin: 0;
+      padding: 0;
+    }
+
+    input[type="checkbox"]::after {
+      content: "✔";
+      font-size: 16px;
+      color: #55aaff;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: none;
+    }
+
+    input[type="checkbox"]:checked::after {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <thead>
+      <tr>
+        <th>Dates</th>
+        <th>Course</th>
+        <th>Typing</th>
+        <th>German language</th>
+        <th>English language</th>
+        <th>Project</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>19</td>
+        <td><input type="checkbox"></td>
+        <td><input type="checkbox"></td>
+        <td><input type="checkbox"></td>
+        <td><input type="checkbox"></td>
+        <td><input type="checkbox"></td>
+      </tr>
+      <!-- Repeat as needed -->
+    </tbody>
+  </table>
+</body>
+</html>

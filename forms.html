@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"form</title>
+</head>
+<body>
+    <h1>Login form</h1>
+    <form>
+        <label for="email">
+            Email:
+            <input type="email"  name="email" placeholder="Enter your email" required>
+        </label>
+        <br>
+        <label for="password">
+            Password:
+            <input type="password" name="password" placeholder="enter your password" required>
+        </label>
+        <br>
+        <label for="education">
+            Education:
+            <select name="education">
+                <option value="" disabled selected>Select your education</option>
+                <option value="highschool">High School</option>
+                <option value="bachelor">Bachelor's Degree</option>
+                <option value="master">Master's Degree</option>
+                <option value="phd">PhD</option>
+            </select>
+        </label>
+        <br>
+        <label>
+            <input type="checkbox" name="remember">
+            Remember me
+        </label>
+        <br>
+        <label for="submit">    
+            <button type="submit"> Login</button>
+        </label>
+        <br>
+        <label for=" feedback"> 
+            Feedback:
+            <textarea name="feedback" rows="4" cols="50" placeholder="Enter your feedback here..."></textarea>
+        </label>
+        <br>
+        <label for="checklist">
+        email  <input type="radio" name="checklist" >
+        password <input type="radio" name="checklist" >
+        education  <input type="radio" name="checklist" >
+
+        </label>
+    </form>
+</body>
+</html>
